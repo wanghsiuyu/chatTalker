@@ -1,0 +1,323 @@
+//背景球
+.ball-4 {
+  position: absolute;
+  top:876px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  width: 94px;
+  height: 361px;
+  background-position: -267px 0;
+  background-size: 361px;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+@media(max-width: 767px){
+  .ball-4 {
+    top: 1263px;
+    width: 96px;
+    height: 204px;
+    background-position: -108px 0;
+    background-size: 204px;
+  }
+}
+// header
+.costHeader {
+  position: relative;
+}
+.costBanner {
+  padding-top: 62px;
+  padding-bottom: 280px;
+}
+.costBannerTitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  .costBanner {
+    padding-top: 16px;
+    padding-bottom: 421px;
+  }
+  .costBannerTitle {
+    font-size: 32px;
+  }
+}
+.costBannerBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 470px;
+  background: #f7f9fd;
+  z-index: -10;
+  border-radius: 0 0 0 300px;
+}
+@media (max-width: 767px) {
+  .costBannerBg {
+    top: 72px;
+    left: 0px;
+    height: 494px;
+    border-radius: 0 0 0 150px;
+  }
+}
+.costBannerHand {
+  position: absolute;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+  top: 0px;
+  right: 0px;
+  width: calc((885 / 1366) * 100%);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -10;
+}
+@media (max-width: 767px) {
+  .costBannerHand {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    width: 100%; //375px
+    height: 100%; //495px
+  }
+}
+
+// 彈性選擇，提供您選擇最適合的方案
+.costPlan {
+   text-align: center;
+}
+@media(max-width: 767px){
+  .costPlan h2 {
+    margin-bottom: 24px;
+  }
+}
+.userNumList {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  white-space: nowrap;
+  margin-bottom: 54px;
+}
+@media(max-width: 767px) {
+  .userNumList {
+    overflow: scroll;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+  }
+}
+.userNumBtn {
+  color: $color-2nd;
+  border: 1px solid $color-2nd;
+  cursor: pointer;
+}
+@media(max-width: 767px){
+.userNumBtn {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+}
+.active {
+  color: white;
+  background: $color-2nd;
+}
+.planCard {
+  display: flex;
+  gap: 21px;
+  justify-content: center;
+}
+@media(max-width: 767px){
+  .planCard {
+    flex-direction: column;
+    gap:24px;
+  }
+}
+.planItem {
+  width: calc((444/ 1088) * 100%);
+  padding: 0 24px;
+}
+@media(max-width: 767px){
+  .planItem {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+.planItemTitle {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 0;
+  margin: 0 -24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.planItemSubtitle {
+  padding: 32px 0;
+}
+@media(max-width: 767px){
+  .planItemTitle {
+    margin: 0 -16px;
+  }
+  .planItemSubtitle {
+    padding: 24px 0;
+  }
+}
+.planBlock {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 32px;
+  span {
+    font-size: 29px;
+  }
+}
+@media(max-width: 767px){
+  .planBlock {
+    gap: 6px;
+    margin-bottom: 24px;
+    span {
+      font-size: 24px;
+    }
+  }
+}
+.planBox {
+  width: 169px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $color-4th;
+  border-radius:12px;
+}
+@media(max-width: 767px){
+  .planBox {
+    width: 139px;
+    height: 89px;
+  }
+}
+.planBoxTxt {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.planBoxNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+    line-height: 1;
+    margin-right: 8px;
+  }
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.3;
+
+  }
+}
+@media(max-width: 767px){
+  .planBoxNum {
+    p {
+      font-size: 28px;
+      margin-right: 4px;
+    }
+    span {
+      line-height: 2;
+    }
+  }
+}
+.TxtColor {
+    color: $color-2nd;
+}
+.planList {
+  text-align: left;
+  text-indent: 28px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  margin-bottom: 16px;
+}
+@media(max-width: 767px){
+  .planList {
+    font-size: 14px;
+    text-indent: 32px;
+    background-size: 16px 14px;
+  }
+}
+.planCardBtn {
+  display: inline-block;
+  color: white;
+  background: $color-2nd;
+  margin:16px 0 32px;
+}
+@media(max-width: 767px){
+  .planCardBtn {
+    margin: 8px 0 24px;
+  }
+}
+
+// 常見問題
+.faqTitle {
+  text-align: center;
+}
+.faqList {
+  margin: 0 auto;
+  max-width: 904px;
+}
+.faqItem {
+  padding: 16px 32px;
+}
+@media(max-width: 767px){
+  .faqItem {
+    padding: 16px;
+  }
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  color: $color-1st;
+}
+.questionTxt {
+  font-size: 18px;
+  line-height: 1;
+}
+@media(max-width: 767px){
+  .questionTxt {
+    font-size: 16px;
+  }
+}
+.plus, .minus {
+  width: 20px;
+  height: 20px;
+}
+@media(max-width: 767px){
+  .plus, .minus {
+    width: 16px;
+    height: 16px;
+  }
+}
+//常見問題jQuery
+.open {
+  margin-bottom: 24px;
+  color: $color-2nd;
+  font-weight: bold;
+}
+@media(max-width: 767px){
+  .open {
+    margin-bottom: 16px;
+  }
+}
+.d-none {
+  display:none;
+}
+
+.answer {
+  display:none;
+  color: $color-3rd;
+  line-height: 2;
+  margin-bottom: 16px;
+}
+@media(max-width: 767px){
+  .answer {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,74 @@
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$color-1st: #221e1f;
+$color-2nd: #56c4c5;
+$color-3rd: #747474;
+$color-4th: #f5f5f5;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  color: $color-1st;
+  letter-spacing:-0.8px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-48-32 {
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .mb-48-32 {
+    margin-bottom: 32px;
+  }
+}
+.mb-100-60 {
+  margin-bottom: 100px;
+}
+@media(max-width: 767px){
+  .mb-100-60 {
+    margin-bottom: 60px;
+  }
+}
+.boxShadow {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #00000014;
+  background: white;
+}
+.btn {
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 27px;
+}
