@@ -105,6 +105,11 @@
   color: $color-2nd;
   border: 1px solid $color-2nd;
   cursor: pointer;
+  &:hover { 
+    color:white;
+    background: $color-2nd;
+    transition: all 0.3s ease;
+  }
 }
 @media(max-width: 767px){
 .userNumBtn {

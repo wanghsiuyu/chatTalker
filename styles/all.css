@@ -751,11 +751,11 @@ body {
 
 /* 調整 swiper 容器 */
 .swiper {
-  padding: 0px 16px 10px 0;
+  padding: 0px 0px 10px 0;
 }
 
 .swiper-wrapper {
-  padding: 0 0 0 20px;
+  padding: 0 16px 0 16px;
 }
 
 .swiper-slide {
@@ -934,6 +934,13 @@ body {
   color: #56c4c5;
   border: 1px solid #56c4c5;
   cursor: pointer;
+}
+
+.userNumBtn:hover {
+  color: white;
+  background: #56c4c5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 767px) {

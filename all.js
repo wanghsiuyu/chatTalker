@@ -5,6 +5,13 @@ function initSwiper() {
     要抓取 id "#comment-swiper"
     */
   const swiper = new Swiper("#comment-swiper", {
+    /*自動輪播*/
+    speed: 1000, //輪播速度
+    loop: true, //無限循環播放
+    autoplay: {  
+      delay: 3000, //幾秒換下一張
+    },
+    
     /*  預設要顯示幾個卡片 */
     slidesPerView: 1,
     /* 斷點設定 */
